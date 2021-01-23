@@ -1,0 +1,7 @@
+Listar a qtde de arquivos em um diretorio e subdiretorios (recursivamente)
+---
+ls -lR | grep ^- | wc -l
+
+OCR arquivos em um diretorio e subdiretorios (recursivamente)
+---
+find . -name '*.pdf' -exec ocrmypdf --language por --deskew --clean '{}' '{}' \;
