@@ -5,3 +5,10 @@ ls -lR | grep ^- | wc -l
 OCR arquivos em um diretorio e subdiretorios (recursivamente)
 ---
 find . -name '*.pdf' -exec ocrmypdf --language por --deskew --clean '{}' '{}' \;
+
+Baixar arquivos por linha de comando
+---
+youtube-dl "link-do-youtube"
+
+apt install youtube-dl
+brew install youtube-dl
