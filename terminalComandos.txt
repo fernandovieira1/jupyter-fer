@@ -2,9 +2,21 @@ Listar a qtde de arquivos em um diretorio e subdiretorios (recursivamente)
 ---
 ls -lR | grep ^- | wc -l
 
+
+===== /// =====
+OCR em mac/linux via linha de comando
+---
+https://ocrmypdf.readthedocs.io/en/latest/
+
 OCR arquivos em um diretorio e subdiretorios (recursivamente)
 ---
 find . -name '*.pdf' -exec ocrmypdf --language por --deskew --clean '{}' '{}' \;
+
+OCR um arquivo
+---
+ocrmypdf -l por doctoAntigo.pdf doctoNovo.pdf
+
+===== /// =====
 
 Baixar arquivos por linha de comando
 ---
